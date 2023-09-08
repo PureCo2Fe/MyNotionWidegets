@@ -36,12 +36,12 @@
 
         .date {
       
-            font-family: monospace;
+            font-family: Tahoma,"Microsoft Yahei";
             font-size: 2em;
         }
 
         .clock {
-            font-family: monospace;
+            font-family: Tahoma,"Microsoft Yahei";
             font-size: 2em;
         }
 
@@ -98,7 +98,7 @@ function dispalyGreetings(today){
         if (hrs < 12)
             greet = name+'♡ 今朝八半堂有冇聽';
         else if (hrs >= 12 && hrs <= 17)
-            greet = name+'♡ 記得休息訓一下';
+            greet = name+'♡ 記得休息一下';
         else if (hrs >= 17 && hrs <= 24)
             greet = name+'♡ 記得早D訓';
         document.getElementById('greet').innerHTML = greet;
