@@ -31,18 +31,18 @@
 
            
         .greet{
-            font-size: 3em;
+            font-size: 2em;
         }
 
         .date {
       
             font-family: Tahoma,"Microsoft Yahei";
-            font-size: 2em;
+            font-size: 1em;
         }
 
         .clock {
             font-family: Tahoma,"Microsoft Yahei";
-            font-size: 2em;
+            font-size: 1em;
         }
 
         .time {
@@ -95,12 +95,12 @@
 function dispalyGreetings(today){
         hrs = today.getHours();
         name="大好きなあなたへ~"
-        if (hrs < 12)
-            greet = name+'  ♡ 今朝八半堂有冇聽';
+        if (hrs < 12 && hrs >= 5 )
+            greet = name+'<br>♡ 今朝八半堂有冇聽~';
         else if (hrs >= 12 && hrs <= 17)
-            greet = name+'  ♡ 記得休息一下';
-        else if (hrs >= 17 && hrs <= 24)
-            greet = name+'  ♡ 記得早D訓';
+            greet = name+'<br>♡ 記得休息一下~';
+        else if ((hrs >= 17 && hrs <= 24) || (hrs < 5))
+            greet = name+'<br>♡ 記得早D訓~';
         document.getElementById('greet').innerHTML = greet;
 
     }
